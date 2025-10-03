@@ -1,7 +1,7 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint2;
 namespace Tyuiu.NeupokoevSV.Sprint2.Task2.V12.Lib
 {
-    public class DataService : ISprint2Task2V0
+    public class DataService : ISprint2Task2V12
     {
         public bool CheckDotInShadedArea(int x, int y)
         {
