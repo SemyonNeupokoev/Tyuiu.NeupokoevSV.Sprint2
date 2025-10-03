@@ -1,4 +1,4 @@
-﻿using Tyuiu.NeupokoevSV.Sprint2.Task2.V12.Lib;
+﻿using Tyuiu.NeupokoevSV.Sprint2.Task3.V19.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -6,21 +6,13 @@ internal class Program
         DataService ds = new DataService();
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
-        int x = Convert.ToInt32(Console.ReadLine());
-        int y = Convert.ToInt32(Console.ReadLine());
+        double x = Convert.ToInt32(Console.ReadLine());
 
-        bool res = ds.CheckDotInShadedArea(x, y);
+        double res = ds.Calculate(x);
         Console.WriteLine();
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        if (res)
-        {
-            Console.WriteLine("Точка находится в заштрихованной области");
-        }
-        else
-        {
-            Console.WriteLine("Точка не находится в заштрихованной области");
-        }
+        Console.WriteLine(res);
     }
 }
